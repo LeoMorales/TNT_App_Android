@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentAcceso">
+    <fragment
+        android:id="@+id/fragmentAcceso"
+        android:name="unpsjb.ing.tnt.vendedores.FragmentAcceso"
+        android:label="fragment_acceso"
+        tools:layout="@layout/fragment_acceso" >
+        <action
+            android:id="@+id/action_acceso_exitoso"
+            app:destination="@id/destinoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinoFragment"
+        android:name="unpsjb.ing.tnt.vendedores.DestinoFragment"
+        android:label="fragment_destino"
+        tools:layout="@layout/fragment_destino" />
+</navigation>
